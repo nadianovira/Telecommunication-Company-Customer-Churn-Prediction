@@ -1,0 +1,64 @@
+# Conceptual Problems
+
+*Jawab pertanyaan berikut dengan menggunakan kalimat Anda sendiri:*
+
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+
+NoSQL, singkatan dari "Not Only SQL," adalah pendekatan dalam manajemen database yang tidak mengikuti struktur tabel relasional 
+seperti pada database SQL tradisional. Sebaliknya, NoSQL mengizinkan penyimpanan dan pengambilan data dalam format yang lebih fleksibel,
+termasuk dokumen, grafik, key-value, atau kolom. Pendekatan ini cocok untuk situasi di mana skema data berubah dengan cepat atau 
+ketika perlu menangani jumlah data yang sangat besar dengan kinerja tinggi.
+
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+
+Relational Database Management System (RDBMS) digunakan ketika memiliki data yang membutuhkan struktur yang ketat 
+dan hubungan antar tabel yang kompleks. RDBMS cocok untuk aplikasi dengan skema data yang tetap dan transaksi kompleks, 
+seperti sistem keuangan atau manajemen inventaris.
+
+NoSQL digunakan ketika skema data cenderung berubah atau tidak terdefinisi dengan jelas 
+dan ketika volume data yang besar dan perlu skalabilitas horizontal. 
+
+NoSQL cocok untuk aplikasi web skala besar, data sensor, atau situasi di mana fleksibilitas 
+dan kinerja yang tinggi lebih diutamakan daripada kebutuhan untuk transaksi kompleks.
+
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+
+MongoDB:
+
+Keunggulan: MongoDB adalah database dokumen NoSQL yang memungkinkan penyimpanan data dalam format dokumen JSON yang fleksibel. 
+Keunggulan utamanya termasuk skalabilitas horizontal, kemampuan untuk menangani data semi-struktural atau tidak terstruktur, 
+dan dukungan untuk indeks yang efisien.
+
+Cassandra:
+
+Keunggulan: Cassandra adalah database kolom keluarga NoSQL yang dirancang untuk menangani volume data besar dengan kinerja tinggi 
+dan ketahanan terhadap kesalahan. Cassandra memiliki arsitektur terdistribusi, memungkinkan replikasi data di seluruh node, 
+dan mendukung skalabilitas horizontal dengan baik. Cassandra juga cocok untuk aplikasi yang memerlukan penulisan dan pembacaan 
+data dengan kecepatan tinggi.
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+
+Apache Airflow adalah platform manajemen alur kerja (workflow) open-source yang digunakan untuk menjadwalkan, 
+mengelola, dan memantau alur kerja data. Dengan Airflow, pengguna dapat mendefinisikan, menjadwalkan, dan mengeksekusi tugas 
+secara terstruktur, serta mengelola ketergantungan antar tugas dalam alur kerja.
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+
+Great Expectations adalah framework open-source untuk memvalidasi dan mengelola ekspektasi (expectations) terhadap data.
+Ini memungkinkan agar dapat mendefinisikan aturan validasi data, menguji data terhadap ekspektasi tersebut, 
+dan memberikan laporan keberhasilan atau kegagalan. 
+Great Expectations membantu memastikan kualitas dan keandalan data dalam alur kerja analisis data.
+
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri 
+(Definisi, Contoh Kasus Penggunaan, Tools, dll) !
+
+Batch processing adalah model pemrosesan data di mana data diproses dalam volume besar dan dalam interval waktu tertentu, 
+tanpa interaksi langsung dengan pengguna. Pemrosesan dilakukan secara kolektif pada sekelompok data.
+
+Contoh Kasus Penggunaan: Pemrosesan tagihan bulanan, analisis data historis, penggabungan data dari beberapa sumber, dll.
+
+Tools: Apache Hadoop (MapReduce), Apache Spark, Apache Flink, dan Apache Beam adalah 
+contoh tools yang sering digunakan untuk batch processing dalam ekosistem big data.
